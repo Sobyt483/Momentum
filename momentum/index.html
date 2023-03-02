@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body class="body">
+  <header class="header">
+    <div class="player visible">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+        <button class="sound player-icon"></button>
+        <div class="volume-bar">
+          <input type="range" class="volume-control" placeholder="50">
+        </div>
+      </div>
+      <div class="progress-bar-container">
+        <div class="song-name"></div>
+        <div class="progress-bar-cont">
+          <div class="progress-bar">
+            <div class="progress-bar-item"></div>
+            <div class="ball"></div>
+          </div>
+        </div>
+        <div class="play-time"></div>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="links-container visible" >
+      <span class="links"></span>
+      <div class="links-window">
+        <div class="links-header">
+          <div class="links-title"></div>
+          <div>
+            <button class="player-icon links-plus"></button>
+            <button class="player-icon links-cross cross-btn"></button>
+          </div>
+        </div>
+        <div class="new-links-container">
+          <ul class="new-links-list"></г>
+        </div>
+      </div>
+      <div class="links-window-input">
+        <div class="links-header">
+          <div class="new-link"></div>
+          <button class="player-icon links-cross cross-input-btn"></button>
+        </div>
+        <div class="links-input-name-container">
+          <span class="link-name"></span>
+          <input type="text" class="links-input links-input-name"></input>
+        </div>
+        <div class="links-input-site-container">
+          <span class="link-site"></span>
+          <input type="text" class="links-input links-input-site" placeholder="example.com"></input>
+        </div>
+        <button class="create-link btn"></button>
+      </div>
+    </div>
+    <div class="weather visible">
+      <input type="text" class="city" />
+      <i class="weather-icon owf hide"></i>
+      <div class="weather-error"></div>
+      <div class="description-container hide">
+        <span class="temperature "></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind hide"></div>
+      <div class="humidity hide"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time visible"></time>
+    <date class="date visible"></date>
+    <div class="greeting-container visible">
+      <span class="greeting"></span>
+      <input type="text" class="name" />
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="settings-container">
+        <div class="settings-window">
+          <div class="language-container">
+            <p class="language settings-item"></p>
+            <button class="language-btn btn">Eng</button>
+            <button class="language-btn btn">Ru</button>
+          </div>
+          <div class="bg-source-container">
+            <p class="bg-sourse settings-item"></p>
+            <button class="bg-btn btn">Git</button>
+            <button class="bg-btn btn">Unsplash</button>
+            <button class="bg-btn btn">Flicker</button>
+            <input type="text" class="tags settings-item"></input>
+          </div>
+          <div class="visibility-container">
+            <p class="visibility-title"></p>
+            <p class="visibility visibility-item settings-item"></p>
+            <input type="checkbox" class="visibility-check visibility-item" ></input>
+            <p class="visibility visibility-item settings-item"></p>
+            <input type="checkbox" class="visibility-check visibility-item" ></input>
+            <p class="visibility visibility-item settings-item"></p>
+            <input type="checkbox" class="visibility-check visibility-item" ></input>
+            <p class="visibility visibility-item settings-item"></p>
+            <input type="checkbox" class="visibility-check visibility-item" ></input>
+            <p class="visibility visibility-item settings-item"></p>
+            <input type="checkbox" class="visibility-check visibility-item" ></input>
+            <p class="visibility visibility-item settings-item"></p>
+            <input type="checkbox" class="visibility-check visibility-item" ></input>
+            <p class="visibility visibility-item settings-item"></p>
+            <input type="checkbox" class="visibility-check visibility-item" ></input>
+          </div>
+        </div>
+        <button class="settings-icon player-icon"></button>
+    </div>
+    <div class="quote-container visible">
+      <button class="change-quote"></button>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+    <div class="author-contacts-container">
+      <a href="https://github.com/Sobyt483" class="link-git" target="_blank">Sobyt483</a>
+      © 2023
+      <a href="https://rs.school/js/" class="rss-link" target="_blank"><img class="rsslogo" src="assets/svg/rss.svg" alt="rsslogo"></a>
+    </div>
+  </footer>
+  <script type="module" src="src/index.js"></script>
+</body>
+</html>
